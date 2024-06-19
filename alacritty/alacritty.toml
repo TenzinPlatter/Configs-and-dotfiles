@@ -16,5 +16,5 @@ blur = true
 option_as_alt = "Both"
 
 [font]
-normal.family = "Consolas NF"
+normal.family = "InconsolataGo Nerd Font Mono"
 size = 20
