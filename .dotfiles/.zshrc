@@ -28,13 +28,13 @@ export PATH
 
 export CLICOLOR=1
 
+alias cpp="clang++ -std=c++20"
 alias p="python3"
 alias nv="nvim"
 alias csw="cd /Users/tenzin/.local/state/nvim/swap"
 alias rj="run_java.zsh"
 alias rc="run_c.zsh"
 alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias cpp="clang++ -std=c++20"
 
 nvinit(){
   cd /Users/tenzin/.config/nvim
