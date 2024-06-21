@@ -3,11 +3,14 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.o.statuscolumn = "%s %l %r "
 
+-- initial setup for 4 windows all at 80 characters
+vim.keymap.set('n', '<leader>i', ":vsp<CR>:vsp<CR>:vsp<CR><C-h><C-h><C-h><C-h> w<C-l> w<C-l> w<C-l>")
+
 -- resize window to 80 characters wide
 vim.keymap.set('n', '<leader>w', ':vertical resize 80<CR>')
 
 -- ctrl shift i to do class + init boilerplate for python
-vim.keymap.set('n', '<C-I>', 'iclass Class:<CR>def __init__(self):<CR><esc>')
+--vim.keymap.set('n', '<C-I>', 'iclass Class:<CR>def __init__(self):<CR><esc>')
 
 -- when using gd (go definition), center text
 vim.keymap.set('n', 'gd', 'gdzz')
@@ -19,8 +22,6 @@ vim.keymap.set('n', '<leader>/', function()
 	vim.cmd('nohlsearch')
 end)
 
--- same keybind as repeat search
--- vim.keymap.set('n', ';', ':')
 
 -- make the window biger vertically
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]], {})
