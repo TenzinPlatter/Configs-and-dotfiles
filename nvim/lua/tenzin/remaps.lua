@@ -3,6 +3,9 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.o.statuscolumn = "%s %l %r "
 
+-- resize window to 80 characters wide
+vim.keymap.set('n', '<leader>w', ':vertical resize 80<CR>')
+
 -- ctrl shift i to do class + init boilerplate for python
 vim.keymap.set('n', '<C-I>', 'iclass Class:<CR>def __init__(self):<CR><esc>')
 
